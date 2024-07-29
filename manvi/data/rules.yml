@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Provide course info
+  steps:
+  - intent: courses_in_amtics
+  - action: utter_course_amtics
+
+- rule: Say about AMTICS
+  steps:
+  - intent: about_amtics
+  - action: utter_about_amtics
